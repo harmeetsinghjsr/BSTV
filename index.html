@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Search Tree Visualization</title>
+  <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+  <h2>Binary Search Tree Visualization</h2>
+  <div>
+    <label>Enter any number</label>
+    <input type="text" id="number" placeholder="Value of the node">
+    <button onclick="enterNumber()">Add me</button>
+    <button onclick="findEle()">Find me (using Binary Search)</button>
+    <button onclick="deleteNumber()">Delete me</button>
+    <button onclick="resetAll()">Reset All</button>
+    <p id="comp">You can see the current status of the Binary Search here.!</p>
+    <br><br>
+    <canvas class="explore_area" id="myCanvas" width="2000" height="750"></canvas>
+  </div>
+  <br>
+  <script src="src/bst.js"></script>
+</body>
+</html>

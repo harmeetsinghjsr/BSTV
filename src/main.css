@@ -1,0 +1,40 @@
+button {
+  padding: 5px;
+  margin-right: 80px;
+  margin-left: 80px;
+  background-color: #dcdcdc;
+  border: 1px solid #666;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  border: solid 2px black;
+}
+
+p {
+  display: inline;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  font-style: italic;
+}
+
+input {
+  margin-left: 10px;
+}
+
+#myCanvas {
+  border: solid 5px black;
+  position: relative;
+  overflow: auto;
+  background-color: gray;
+}
+
+.delete-me {
+  display: none;
+}

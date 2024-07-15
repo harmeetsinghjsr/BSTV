@@ -1,5 +1,3 @@
-package BSTV;
-
 public class bst {
     static class Node{
         int data;

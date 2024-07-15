@@ -189,7 +189,7 @@ server <- function(input, output, session) {
       updatePlot(NULL)
     })
   })
-  
+
   # Render the plot initially
   output$treePlot <- renderPlotly({
     updatePlot(values$tree)

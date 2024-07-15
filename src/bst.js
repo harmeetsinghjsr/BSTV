@@ -22,7 +22,7 @@ class BST {
     this.maxWidth = maxWidth;
     this.minWidth = minWidth;
   }
-
+  
   insert(value, x, y) {
     if (value < this.value) {
       if (this.left == null) {

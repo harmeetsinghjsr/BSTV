@@ -5,31 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Binary Search Tree Visualization</title>
   <link rel="stylesheet" href="src/main.css">
-  <style>
-    h2 {
-      font-family: Arial, sans-serif;
-      color: #651283;
-      font-display: block;
-      text-align: center;
-      font-size: 2.5em;
-      margin-top: 20px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h2>Binary Search Tree Visualization</h2>
-  <div>
-    <label>Enter any number</label>
-    <input type="text" id="number" placeholder="Value of the node">
-    <button onclick="enterNumber()">Add me</button>
-    <button onclick="findEle()">Search me</button>
-    <button onclick="deleteNumber()">Delete me</button>
-    <button onclick="resetAll()">Reset All</button>
+  <div class="container">
+    <h2>Binary Search Tree Visualization</h2>
+    <div class="controls">
+      <label for="number">Enter any number:</label>
+      <input type="text" id="number" placeholder="Value of the node">
+      <button onclick="enterNumber()">Add me</button>
+      <button onclick="findEle()">Search me</button>
+      <button onclick="deleteNumber()">Delete me</button>
+      <button onclick="resetAll()">Reset All</button>
+    </div>
     <p id="comp">You can see the current status of the Binary Search here!</p>
-    <br><br>
-    <canvas class="explore_area" id="myCanvas" width="1500" height="500"></canvas>
+    <canvas class="explore_area" id="myCanvas" width="1500" height="450"></canvas>
   </div>
-  <br>
   <script src="src/bst.js"></script>
 </body>
 </html>

@@ -3,12 +3,11 @@ button {
   margin-right: 80px;
   margin-left: 80px;
   background-color: #dcdcdc;
-  border: 1px solid #666;
+  border: solid 2px black;
   color: #000;
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
-  border: solid 2px black;
 }
 
 p {
@@ -29,10 +28,10 @@ input {
 }
 
 #myCanvas {
-  border: solid 5px black;
+  border: solid 5px rgb(11, 11, 80);
   position: relative;
   overflow: auto;
-  background-color: gray;
+  background-color: rgb(90, 245, 227);
 }
 
 .delete-me {

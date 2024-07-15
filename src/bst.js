@@ -1,8 +1,8 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
-const canvas_width = document.getElementById("myCanvas").width;
-const canvas_height = document.getElementById("myCanvas").height;
+const canvas_width = c.width;
+const canvas_height = c.height;
 
 let root_x = Math.floor(canvas_width / 2);
 let root_y = 50;
@@ -139,7 +139,7 @@ function draw_circle(x, y, value, pX, pY) {
   ctx.fillText(value, x, y + 5);
   ctx.stroke();
 
-  if (pX == 0 && pY == 0) return;
+  if (pX === 0 && pY === 0) return;
   ctx.lineWidth = 5;
   ctx.moveTo(x, y - 20);
   ctx.lineTo(pX - 5, pY + 20); // parent node
@@ -185,14 +185,14 @@ let firstNodeVisual = true;
 async function findEle() {
   reset_Tree_Visual(reset_nodes);
   let value = document.getElementById("number").value;
-  if (!value == "") {
+  if (value !== "") {
     if (await contains(demo, parseInt(value))) {
       alert("Found");
     } else {
       alert("Not found!");
     }
   } else {
-    alert("Cannot search for the blank value!");
+    alert("Cannot search for a blank value!");
   }
   firstNodeVisual = true;
 }
@@ -202,7 +202,7 @@ function resetAll() {
   root = true;
   ctx.clearRect(0, 0, canvas_width, canvas_height);
   document.getElementById("number").value = "";
-  document.getElementById("comp").innerHTML = "You can see the current status of the Binary Search here.!";
+  document.getElementById("comp").innerHTML = "You can see the current status of the Binary Search here!";
 }
 
 function sleep(ms) {
@@ -245,7 +245,7 @@ async function contains(demo, value) {
       ctx.fillText(demo.value, demo.x, demo.y + 5);
       ctx.stroke();
       reset_nodes.push([demo.x, demo.y, demo.value]);
-      document.getElementById("comp").innerHTML = value + " is not found in this tree.!";
+      document.getElementById("comp").innerHTML = value + " is not found in this tree!";
       return false;
     } else {
       ctx.beginPath();
@@ -280,7 +280,7 @@ async function contains(demo, value) {
       ctx.fillText(demo.value, demo.x, demo.y + 5);
       ctx.stroke();
       reset_nodes.push([demo.x, demo.y, demo.value]);
-      document.getElementById("comp").innerHTML = value + " is not found in this tree.!";
+      document.getElementById("comp").innerHTML = value + " is not found in this tree!";
       return false;
     } else {
       ctx.beginPath();
@@ -312,7 +312,7 @@ async function contains(demo, value) {
     ctx.textAlign = "center";
     ctx.fillText(demo.value, demo.x, demo.y + 5);
     ctx.stroke();
-    document.getElementById("comp").innerHTML = value + " is found in this tree.!";
+    document.getElementById("comp").innerHTML = value + " is found in this tree!";
     return true;
   }
 }

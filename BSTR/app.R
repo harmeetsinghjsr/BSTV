@@ -43,6 +43,11 @@ ui <- fluidPage(
         color: navy;
         margin-top: 10px;
       }
+
+      .circle {
+        fill: #1f77b4;
+        stroke: #1f77b4;
+      }
     ")
   )
 )
